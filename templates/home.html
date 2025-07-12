@@ -1,0 +1,186 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    body {
+        font-family: 'Space Grotesk', sans-serif;
+        background-color: #111;
+        color: #e6e6e6;
+    }
+
+    section {
+        padding: 100px 0;
+    }
+
+    h1, h2, h5 {
+        font-weight: 700;
+    }
+
+    .hero-name {
+        font-size: 3.5rem;
+        font-weight: 700;
+        letter-spacing: -1px;
+    }
+
+    .lead {
+        font-size: 1.25rem;
+        font-weight: 400;
+        color: #aaa;
+    }
+
+    .highlight-title {
+        font-size: 6rem;
+        font-weight: 700;
+        line-height: 1;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+
+    .about-text p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #cfcfcf;
+    }
+
+    a.nav-link {
+        color: #fff !important;
+    }
+
+    a.nav-link:hover {
+        color: #bbb !important;
+    }
+
+    .navbar-brand {
+        color: #fff !important;
+        font-weight: 600;
+    }
+
+    .navbar-brand:hover {
+        color: #bbb !important;
+    }
+
+    .project-item {
+        background: #1a1a1a;
+        border-radius: 12px;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+
+    .service-box {
+        background: #1d1d1d;
+        border-radius: 10px;
+        padding: 20px;
+        transition: 0.3s;
+    }
+
+    .service-box:hover {
+        background: #2a2a2a;
+    }
+
+    @media (max-width: 768px) {
+        .highlight-title {
+            font-size: 3rem;
+        }
+
+        .hero-name {
+            font-size: 2.5rem;
+        }
+    }
+</style>
+
+<!-- HERO SECTION -->
+<section id="home" class="text-center">
+    <div class="container">
+        <h1 class="hero-name">Shayan Ejaz</h1>
+        <p class="lead mt-3">Design-driven developer focused on simplicity, speed, and usability.</p>
+    </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section id="about">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Left Big Text -->
+            <div class="col-md-5 text-start">
+                <div class="highlight-title">
+                    STUDENT<br>
+                    DEVELOPER<br>
+                    CREATOR
+                </div>
+            </div>
+            <!-- About Me -->
+            <div class="col-md-7 about-text">
+                <h2 class="mb-4">About Me</h2>
+                <p>
+                    I'm Shayan Ejaz — a 17-year-old creative web developer and student based in Pakistan.
+                    My focus is crafting beautiful, performant websites that merge function with form.
+                </p>
+                <p>
+                    I specialize in front-end development with HTML, CSS, JavaScript, and build full-stack
+                    apps using Python and Flask. I'm obsessed with detail and love turning ideas into interactive, user-centered experiences.
+                </p>
+                <p>
+                    Beyond the code, I care deeply about design thinking, accessibility, and building products that solve real problems. I’m actively working on freelance projects and open to collaborations that align with purposeful digital work.
+                </p>
+                <p>
+                    GitHub: <a href="https://github.com/AgentTurtles" target="_blank">AgentTurtles</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICES SECTION -->
+<section id="services" class="text-center">
+    <div class="container">
+        <h2 class="fw-bold mb-5">What I Do</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="service-box">
+                    <h5>Web Development</h5>
+                    <p>Clean, efficient, and scalable websites using HTML, CSS, JavaScript, and Flask.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <h5>Responsive Design</h5>
+                    <p>Mobile-first layouts with pixel-perfect precision and optimized performance.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <h5>UI/UX Focused</h5>
+                    <p>I combine development with thoughtful design for engaging, user-friendly experiences.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS SECTION -->
+<section id="projects" class="text-center">
+    <div class="container">
+        <h2 class="fw-bold mb-5">Projects</h2>
+        <div class="project-item">
+            <h5>Weather App</h5>
+            <p>A clean Flask-based weather app that fetches real-time weather data using OpenWeatherMap API.</p>
+            <a href="https://github.com/AgentTurtles/Weather-App" target="_blank">View Project</a>
+        </div>
+        <!-- Add more project items here -->
+    </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section id="contact" class="text-center">
+    <div class="container">
+        <h2 class="fw-bold mb-4">Contact</h2>
+        <p>Reach out at <strong>shayanejaz2018@example.com <br>
+        </strong> or connect via <a href="https://github.com/AgentTurtles" target="_blank">GitHub</a>.</p>
+    </div>
+</section>
+
+{% endblock %}
